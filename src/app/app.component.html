@@ -1,0 +1,41 @@
+<div class="container mt-5 " style="width: 32rem;" >
+  
+
+    <mat-card class="bg-info" style="height: 36rem; width: 30rem; text-align: center;">
+      <div class="name bg-info" style="color: darkslateblue;">CALCULATOR</div>
+    <input type="text" [value]="display" disabled style="height: 4rem; width: 25rem;" class="display mt-4"/>
+   
+    <div class="row">
+        <div class="col-3">
+            <button mat-fab (click)="Operation('+')" value="+" class="button">+</button>
+            <button mat-fab (click)="getnum('7')" value="7" class="button">7</button>
+            <button mat-fab (click)="getnum('4')" value="4" class="button">4</button>
+            <button mat-fab (click)="getnum('1')" value="1" class="button">1</button>
+            <button mat-fab (click)="getnum('0')" value="0" class="button">0</button>
+        </div>
+
+        <div class="col-3">
+            <button mat-fab (click)="Operation('-')" value="-" class="button">-</button>
+            <button mat-fab (click)="getnum('8')" value="8" class="button">8</button>
+            <button mat-fab (click)="getnum('5')" value="5" class="button">5</button>
+            <button mat-fab (click)="getnum('2')" value="2" class="button">2</button>
+            <button mat-fab (click)="Decimal()" value="." class="button">.</button>
+        </div>
+        <div class="col-3">
+            <button mat-fab (click)="Operation('x')" value="x" class="button">x</button>
+            <button mat-fab (click)="getnum('9')" value="9" class="button">9</button>
+            <button mat-fab (click)="getnum('6')" value="6" class="button">6</button>
+            <button mat-fab (click)="getnum('3')" value="3" class="button">3</button>
+            <button mat-fab (click)="clear()" value="AC" class="button bg-danger">AC</button>
+        </div>
+        <div class="col-3">
+            
+            
+            
+            <button mat-fab (click)="Operation('/')" value="/" class="button">/</button>
+            <button mat-raised-button (click)="Operation('=')" value="=" style="height: 18.5rem;" class="button text-light op">=</button>
+        </div>
+    </div>
+
+</mat-card>
+</div>
